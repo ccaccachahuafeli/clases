@@ -145,6 +145,24 @@ else:
     print("si es falso imprime esto")
 ```
 > ### 2.ciclos.
-
+> existe dos tipos
+> cuando sabes la cantidad de veces que vamos a repetir para este caso existe el **for**.
+> sintaxis despues de la palabra reservada for deberemos crear una variable que almacene el numero 
+> que iremos intentando.
+> luego tendremos que indicar el rango a intentar a los elementos a intentar
+``` python
+ for i in range(1,2)
+    print(i)
+```
+```python
+vocales=['a','e','i','o','u']
+for i in vocales:
+    print(i)
+```
+```python
+numeros=[45,12,78,1,2]
+for i in numeros:
+    print(i)
+```
 ## 6. FUNCIONES.
 > 
