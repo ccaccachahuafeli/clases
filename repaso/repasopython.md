@@ -105,4 +105,46 @@ alumno={
     }
 }
 ```
-## 5. FUNCIONES.
+## 5. controles de flujos.
+> ### 1.decisiones.
+> solo se ejecuta el codigo si cumple o si la condicion es verdadera, podemos hacer que si la condicion sea falsa se ejecute otro codigo.
+> **sintaxis**
+> 
+>primero especificar el codigo que se ejecutara si cumple una condicion.
+```python
+if <condicion>:
+    ## el codigo que deseamos ejecutar si la condicion es verdad
+    print('ejecuta esto')
+    ## aqui estamos fuera del if o del si este codigo siempre  ejecutara no depende del if.
+print('esto siempre ejecutara')
+#----------------------------------------------------------------------------
+# si queremos que se ejecute un codigo en caso sea falso.
+if condicion falso>:
+    print("SOLO IMPRIME SI ES VERDAD")
+else:
+    print("solo imprimir si es falso")
+```
+**ejemplos**
+```python
+if 15>18:
+    print("si es verdadero imprimir esto")
+else:
+    print("si es falso imprime esto")
+```
+```python
+if 15*2==30:
+    print("si es verdadero imprimir esto")
+else:
+    print("si es falso imprime esto")
+```
+```python
+condicion=True
+if condicion:
+    print("si es verdadero imprimir esto")
+else:
+    print("si es falso imprime esto")
+```
+> ### 2.ciclos.
+
+## 6. FUNCIONES.
+> 
