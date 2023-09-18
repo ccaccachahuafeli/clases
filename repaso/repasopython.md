@@ -164,5 +164,25 @@ numeros=[45,12,78,1,2]
 for i in numeros:
     print(i)
 ```
+> cuando no sabemos la cantidad de veces a repetir.
+
+>El uso del while nos permite ejecutar una sección de código repetidas veces, de ahí su nombre. El código se ejecutará mientras una condición determinada se cumpla. Cuando se deje de cumplir, se saldrá del bucle y se continuará la ejecución normal. Llamaremos iteración a una ejecución completa del bloque de código.
+```python
+x = 5
+while x > 0:
+    x -=1
+    print(x)
+
+# Salida: 4,3,2,1,0
+```
+```python
+condicion= True
+ while True:
+    print("hola")
+    texto=input('imgrese tu nombre o salir para terminar el programa: ')
+    if texto=="sali":
+        condicion=false
+```
+
 ## 6. FUNCIONES.
-> 
+>   

@@ -16,18 +16,43 @@
 # ahora pagaras < mostrar el total de la compra menos el descuento' en caso la compra no supere los 1000 soles
 # entonces mostrar un mensaje que diga 'no aplicas al descuento <mostrar el monto de la compra>.
 
-nombre_tienda=("comercial dasaly: ")
-nombre_cliente=input("ingrese nombre del cliente: ")
-monto_compra=int(input("ingrese el monto de la compra: "))
+# nombre_tienda=("comercial dasaly: ")
+# nombre_cliente=input("ingrese nombre del cliente: ")
+# monto_compra=int(input("ingrese el monto de la compra: "))
 
-if monto_compra>=1000:
+# if monto_compra>=1000:
     descuento=monto_compra*0.2
     total_pagar=monto_compra - descuento
     print("ganastes el descuento del 20%")
 
-else:
-    print("no aplicas al descuento de 20%")
+# else:
+  #  print("no aplicas al descuento de 20%")
     
+
+# 3. crear un programa que me pida 5 veces un  nombre y por cada vez que lo pida muestre
+#  la cantidad de veces que ingrese el nombre.
+# for n in range(1,6)
+#  nombre=input('ingrese su nombre: ')
+#  print(f'ingrese {n} veces el nombre')
+
+# 4. crear un programa que pida un numero y lo evalue con el numero premiado  si el 
+# numero ingresado es el premiado el programa finalizara si el numero ingresado 
+# es incorrecto el programa seguira pidiendo el numero premiado.
+
+
+numero_ganador:50
+condicion=True
+while condicion:
+    numero_ingrese=int(input('ingrese un numero: '))
+    if numero_ingrese==numero_ganador:
+        print('ganaste')
+        condicion=False 
+
+else:
+    print('sigue intentando')
+
+
+
 
 
 
