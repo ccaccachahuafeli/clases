@@ -40,7 +40,7 @@
 # es incorrecto el programa seguira pidiendo el numero premiado.
 
 
-numero_ganador:50
+numero_ganador=90
 condicion=True
 while condicion:
     numero_ingrese=int(input('ingrese un numero: '))

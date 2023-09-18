@@ -166,7 +166,7 @@ for i in numeros:
 ```
 > cuando no sabemos la cantidad de veces a repetir.
 
->El uso del while nos permite ejecutar una sección de código repetidas veces, de ahí su nombre. El código se ejecutará mientras una condición determinada se cumpla. Cuando se deje de cumplir, se saldrá del bucle y se continuará la ejecución normal. Llamaremos iteración a una ejecución completa del bloque de código.
+>El uso del **while** nos permite ejecutar una sección de código repetidas veces, de ahí su nombre. El código se ejecutará mientras una condición determinada se cumpla. Cuando se deje de cumplir, se saldrá del bucle y se continuará la ejecución normal. Llamaremos iteración a una ejecución completa del bloque de código.
 ```python
 x = 5
 while x > 0:
@@ -185,4 +185,26 @@ condicion= True
 ```
 
 ## 6. FUNCIONES.
->   
+>   existen dos tipos de funciones
+>1. propias de lenguaje.
+>
+> que ya bienen creadas e insertadas  en python y estan listas para ser usadas.
+> estructura de uso de una funcion.
+> tiene el nombre seguido de parentesis.
+> dentro de parientesispodemos pasarle datos que necesita la funcion para ejecutarse
+
+````python
+# esta es una funcion que nos sirve para mostrar por consola datos
+print('hola')
+
+len( )# esta funcion nos permite saber la longitud de una lista o un string 
+# len nos devuelve un numero.
+print(len([1,2,6,7,8]))
+
+input( )# este es una funcion que se detiene a esperar que el usuario intrudusca la informacion 
+# entre parentesis podremos escribir un mensaje que indique que accion realizara el usuario.
+
+input('ingrese ingresa')
+```
+
+> 2. funciones creadas.
