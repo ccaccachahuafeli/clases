@@ -193,18 +193,134 @@ condicion= True
 > tiene el nombre seguido de parentesis.
 > dentro de parientesispodemos pasarle datos que necesita la funcion para ejecutarse
 
-````python
+```python
 # esta es una funcion que nos sirve para mostrar por consola datos
 print('hola')
-
+```
+> **len**
+```python
 len( )# esta funcion nos permite saber la longitud de una lista o un string 
 # len nos devuelve un numero.
 print(len([1,2,6,7,8]))
-
-input( )# este es una funcion que se detiene a esperar que el usuario intrudusca la informacion 
-# entre parentesis podremos escribir un mensaje que indique que accion realizara el usuario.
-
-input('ingrese ingresa')
 ```
 
-> 2. funciones creadas.
+**input( )**
+>  este es una funcion que se detiene a esperar que el usuario intrudusca la informacion 
+>  entre parentesis podremos escribir un mensaje que indique que accion realizara el usuario.
+input('ingrese ingresa')
+
+
+**max** esta funcion nos muuestra el numero mayor de una lista 
+```python
+lista=[45,12,78,3,24,50]
+numero_mayor=max(lista)
+print(numero_mayor)
+```
+**min** esta funcion nos muestra el numero menor de una lista
+
+```python
+lista=[45,12,78,3,24,50]
+numero_menor=min(lista)
+print(numero_menor)
+```
+
+**string** funcion para convertir de una string a un numero entero
+```python
+numero _string='100'
+print(type(numero_string))
+numero_entero=int(numero_string)
+print(type(numero_entro))
+```
+```python
+int('100')#->>100  ->> entero
+```
+funcion para convertir un entero a un string
+
+```python
+str('100')#->> '100'  ->> string
+```
+> **append** FUNCION DE PYTHON QUE NOS PERMITE AGREGAR ELEMENTOS AL FINAL DE UNA LISTA
+```python
+lista=[15,12,78]
+elemento=100
+lista.append(elemento)
+print(lista)
+```
+
+**pop** funcion de python que nos permite eliminar los elementos que se encuentra al final de la lista
+```python
+lista=[15,12,78]
+lista.pop( )
+print(lista)
+```
+
+**insert** funcion de python que nos permite agregar elelmentos en cualquier posicion de mi lista para eso 
+se le tiene que pasar dos parametros, primero indicarle el indice y segundo el dato que se va agregar
+```python
+lista_nombre=['jory','nadine','bichota']
+lista_nombre.insert(1,'satan')
+print(lista_nombre)
+```
+ **remove** funcion de python que nos permite eliminar elementos de cualquier posicion de una lista, esta funcion 
+> recibe solo el elemento que deseamos eliminar.
+```python 
+lista=[4,5,6,8,6,7]
+lista.remove(6)
+print(lista)
+```
+**split** funcion que nos permite dividir en una lista una cadena
+```python 
+cadena='hola como estas'
+lista=cadena.split()
+print(lista)
+url='www.golle.com/id=70133573'
+id_=url.split('=').pop( )
+print(id)
+```
+# 2. funciones creadas o funciones propias
+> pasos para crear una funcion propia
+>  una funcion son mini programas tambien se le conoce como modulos o fragmentos de codigo de uso exclusiva.
+> 1. hacer uso de la palabra reservada def
+> 2. definir nombre de funcion que describa que tarea va a realizar
+> 3. establercer los parametros que resibira la funcion entre parentesis( )
+> 4. establecer que valor odato va retornar mi funcion con la palabra reservada return
+>  observacion =>> tambien podemos hacer uso de la funcion print () para retornar un mensaje en nuestra funcion
+>  existen dos tipos de funciones los que no resiven ninigun parametro
+> y los que resiven parametro 
+```python
+def saludo():
+    print('hola este es un saludo')
+```
+>  como hacemos uso de la funcion ??
+> 
+> nombre de la funcion y parentisis
+  
+  ```python
+  def mi_print(texto)
+     print(texto)
+
+ print('hola este es print de python')  
+ mi_print('hola este es mi print creado')  
+  ```
+```python
+def suma(a,b)
+  total=a+b
+  return total
+  mi_print(suma(45,12)) ##==>>>>  57
+```
+
+# ejemplos
+> para que se usa esta funcion 
+> para mostrar el valor maximo de una lista
+``` python
+lista=[12,4,45,78,3,1]
+mi_print(max(lista)) # ===>>> 78
+
+def mi_max(lista):
+    numero_mayor=lista[0]
+    for numero in lista:
+        if numero > numero_mayor:
+            numero_mayor=numero
+    return numero_mayor
+mi_print(mi_max(lista))            
+```
