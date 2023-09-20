@@ -21,9 +21,9 @@
 # monto_compra=int(input("ingrese el monto de la compra: "))
 
 # if monto_compra>=1000:
-    descuento=monto_compra*0.2
-    total_pagar=monto_compra - descuento
-    print("ganastes el descuento del 20%")
+# descuento=monto_compra*0.2
+#     total_pagar=monto_compra - descuento
+#     print("ganastes el descuento del 20%")
 
 # else:
   #  print("no aplicas al descuento de 20%")
@@ -40,19 +40,39 @@
 # es incorrecto el programa seguira pidiendo el numero premiado.
 
 
-numero_ganador=90
-condicion=True
-while condicion:
-    numero_ingrese=int(input('ingrese un numero: '))
-    if numero_ingrese==numero_ganador:
-        print('ganaste')
-        condicion=False 
+# numero_ganador=90
+# condicion=True
+# while condicion:
+#     numero_ingrese=int(input('ingrese un numero: '))
+#     if numero_ingrese==numero_ganador:
+#         print('ganaste')
+#         condicion=False 
 
-else:
-    print('sigue intentando')
-
-
+# else:
+#     print('sigue intentando')
 
 
 
+# craer una funcion por cada operador aritmetico que  resiva dos parametros y retorne el resultado
+# de la operacion, ojo. crear una funcion que nos permite impremir el resultado.
+def mi_print(texto):
+    print(texto)
 
+def suma(a,b):
+    return a+b    
+
+
+def resta(a,b):
+    return a-b 
+
+
+def multi(a,b):
+    return a*b 
+
+def divi(a,b):
+    return a/b 
+
+mi_print(suma(8,5))
+mi_print(resta(8,5))
+mi_print(multi(8,5))
+mi_print(divi(8,5))
