@@ -324,3 +324,37 @@ def mi_max(lista):
     return numero_mayor
 mi_print(mi_max(lista))            
 ```
+
+
+``` python
+lista=[12,4,45,78,3,1]
+mi_print(min(lista)) # ===>>> 78
+
+def mi_min(lista):
+    numero_mayor=lista[0]
+    for numero in lista:
+        if numero > numero_menor:
+            numero_menor=numero
+    return numero_menor
+mi_print(mi_min(lista))            
+```
+# funciones con muchos parametros
+```python
+def funciones(*muchos_parametros):
+    total=0
+    for nuemero in muchos_parametros:
+        total=total+numero
+    return total 
+print(funcion(45,12,78,10,20))        
+```
+
+```python
+def datos(*args):
+    nombre=args[0]
+    apellidos=args[1]
+    edad=args[2]
+    return f'mi nombrees,{nombre},{apellidos}y mi edad,{edad}'
+print('edwin','apellidos','50')    
+```
+## cuanto es el factorial de 5
+5*4*3*2*1

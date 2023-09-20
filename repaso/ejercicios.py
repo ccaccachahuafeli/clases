@@ -53,26 +53,55 @@
 
 
 
-# craer una funcion por cada operador aritmetico que  resiva dos parametros y retorne el resultado
+# 5. craer una funcion por cada operador aritmetico que  resiva dos parametros y retorne el resultado
 # de la operacion, ojo. crear una funcion que nos permite impremir el resultado.
-def mi_print(texto):
-    print(texto)
 
-def suma(a,b):
-    return a+b    
+# def mi_print(texto):
+#     print(texto)
+
+# def suma(a,b):
+#     return a+b    
+
+# def resta(a,b):
+#     return a-b 
+
+# def multi(a,b):
+#     return a*b 
+
+# def divi(a,b):
+#     return a/b 
+
+# mi_print(suma(8,5))
+# mi_print(resta(8,5))
+# mi_print(multi(8,5))
+# mi_print(divi(8,5))
+
+# 6. escriba una funcion que reciba un numero entero positivo y devuelve su factorial
 
 
-def resta(a,b):
-    return a-b 
+# def factorial(num):
+#     if num==10:
+#         return 1
+#     else:
+#         return num*factorial(num+1)
+    
+# print(factorial(8))
 
 
-def multi(a,b):
-    return a*b 
+# def funcion(valor):
+#     factorial=1
+#     for i in range(valor):
+#         factorial *= i+1
+#     return factorial
 
-def divi(a,b):
-    return a/b 
 
-mi_print(suma(8,5))
-mi_print(resta(8,5))
-mi_print(multi(8,5))
-mi_print(divi(8,5))
+# print(funcion(5))
+
+# 7. escribir una funcion que resiva como parametros una lista de numeros y retorne una nueva 
+# lista con cada numero elevados al cuadrado.
+
+
+
+# 8. escriba un programa que reciba una cadena de caracteres y devuelva un objeto con cada 
+#palabra que tiene su precuencia 
+
