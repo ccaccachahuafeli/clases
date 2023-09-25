@@ -100,8 +100,43 @@
 # 7. escribir una funcion que resiva como parametros una lista de numeros y retorne una nueva 
 # lista con cada numero elevados al cuadrado.
 
+# def elevar_al_cuadrado(lista_numeros):
+    
+#     resultado = []
+    
+#     for numero in lista_numeros:
+#         resultado.append(numero ** 2)
+    
+#     return resultado
+
+# numeros = [1, 2, 3, 4, 5]
+# resultado = elevar_al_cuadrado(numeros)
+# print(resultado)  
 
 
 # 8. escriba un programa que reciba una cadena de caracteres y devuelva un objeto con cada 
-#palabra que tiene su precuencia 
+#palabra que tiene su frecuencia 
+
+def contar_palabras(cadena):
+    palabras = cadena.split()
+    
+    frecuencia_palabras = {}
+    
+    for palabra in palabras:
+       
+        if palabra in frecuencia_palabras:
+            frecuencia_palabras[palabra] += 1
+        else:
+            
+            frecuencia_palabras[palabra] = 1
+    
+    return frecuencia_palabras
+
+texto = input("Ingrese una palabra: ")
+
+frecuencias = contar_palabras(texto)
+
+for palabra, frecuencia in frecuencias.items():
+    print(f"{palabra}: {frecuencia}")
+
 
