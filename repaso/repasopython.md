@@ -356,5 +356,7 @@ def datos(*args):
     return f'mi nombrees,{nombre},{apellidos}y mi edad,{edad}'
 print('edwin','apellidos','50')    
 ```
-## cuanto es el factorial de 5
+***cuanto es el factorial de 5
 5*4*3*2*1
+
+
