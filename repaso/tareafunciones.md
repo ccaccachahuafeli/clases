@@ -129,3 +129,11 @@ Puedes generar un archivo de requisitos que enumera las dependencias de tu proye
 Para instalar las dependencias desde un archivo de requisitos en otro entorno virtual, usa:
 > pip install -r requirements.txt
 
+
+
+
+# 3. crear un entorno virtual con venv de python e instalar el framewrok django para la creacion de app web
+> crear entorno
+> activar entorno
+> instalar el paquete         
+
