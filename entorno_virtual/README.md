@@ -14,3 +14,30 @@ cd <ruta de archivo>
 # ejemplo 
 cd nombre_carpeta/entorno_uno 
 ```
+> 2. creamos entorno virtual con el seguiente comando
+```bash
+python -m venv <nombre de nuestro entorno virtual >
+# ejemplo
+python -m venv mi_entorno
+```
+> 3. para activar el entorno virtual con el siguiente comando
+```bash
+source venv/Scrip/activate
+```
+> #### observacion:
+> para poder ejecutar en powershell como terminal predeterminado ejecutar el siguiente comando 
+```bash
+venv\Script\Activate.ps1
+```
+## PARA INSTALAR PAQUETES EN NUESTRO ENTORNO VIRTUAL.
+> 1. primero verificamos que no tenga paquete instalado y lo listamos con el siguiente comando 
+> debemos tener activado nuestro entorno virtual primer.
+```bash
+pip list
+```
+>2. luego instalaremos con el siguiente comando.
+````bash
+pip install <nombre del paquete>
+# ejemplo
+pip install pandas
+```
