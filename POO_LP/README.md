@@ -12,5 +12,44 @@ y en la **poo** un objeto es toda entidad que se puede describir a travez
 de **atributos** y **funciones** que puede realizar la entidad.
 ![Alt text](image-1.png)
 
+# atributos de clases
+# celulares
+```bash
+class celular:
+```
+## atributos de tipo clase
+## que son iguales para todos los objetos
+## que se creen
+```bash
+framilia="smart phone"
+```
+#atributos de instancia 
+## son atributos propios del objeto
+## creamos una funcion inicializadora  
+
+```bash
+def llamar(self,destino)
+return f"llamando a {destino}"
+```
+
+# objeto celular jory
+```bash
+llamandojory=celular("poco","x5","45678945614","968521431")  # instanciando mi clase - creadon mi objeto celular
+```
+
+```bash
+print(llamandojory.marca)
+print(llamandojory.familia)
+print(llamandojory.llamar("china"))
+```
+# objeto celular nadine
+
+```bash
+llamandonadine=celular("alcatel","basico","5674684645","963852741")  # instanciando mi clase - creadon mi objeto celular
+```
+```bash
+print(llamandonadine.marca)
+print(llamandonadine.familia)
+print(llamandonadine.llamar("ollanta"))
 
 

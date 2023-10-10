@@ -139,7 +139,7 @@
 # la_impresora.obtener_informacion()
 
 
-# haciendo uso de la poo crear un objeto para emitir una factura
+# 7. haciendo uso de la poo crear un objeto para emitir una factura
 
 # class Factura:
 #     def __init__(self, numero_factura, cliente, total):
@@ -157,3 +157,37 @@
 
 # print(mi_factura.numero_factura)  
 # mi_factura.imprimir_factura()
+
+# 8: crear un objeto clase laptop con dos atributos de clase y 
+# 5 atributos de instancia devera tener hasta 3 funcinalidades como minimo
+# crear tres objetos instancia de clase distinto 
+
+# class laptop:
+#     tipo="pc portatil"
+#     tecladoNumero= True
+#     def __init__(self,marca,modelo,ram,tipoDisco,almacenamiento):
+#         self.marca=marca
+#         self.modelo=modelo
+#         self.ram=ram
+#         self.tipoDisco=tipoDisco
+#         self.almacenamiento=almacenamiento
+#     def info(self):
+#         respueta=f""
+
+# 9. crear una clase puesto de mercado que tenga un atributo de clase ,5 atributos de 
+# instancia y 5 funcinalidades.
+# dedera crear 4 instancia de la clase mercado 
+
+class mercado:
+    categoria="alimentacion"
+    def __init__(self,nombre,ubicacion,producto,propietario,horario):
+        self.nombre=nombre
+        self.ubicacion=ubicacion
+        self.producto=producto
+        self.propitario=propietario
+        self.horario=horario
+        
+
+
+
+
