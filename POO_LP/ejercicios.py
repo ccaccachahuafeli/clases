@@ -178,14 +178,56 @@
 # instancia y 5 funcinalidades.
 # dedera crear 4 instancia de la clase mercado 
 
-class mercado:
-    categoria="alimentacion"
-    def __init__(self,nombre,ubicacion,producto,propietario,horario):
-        self.nombre=nombre
-        self.ubicacion=ubicacion
-        self.producto=producto
-        self.propitario=propietario
-        self.horario=horario
+class PuestoDeMercado:
+    # Atributo de clase
+    num_puestos = 0
+
+    def __init__(self, nombre, ubicacion, tipo_productos, area, num_empleados):
+        # Atributos de instancia
+        self.nombre = nombre
+        self.ubicacion = ubicacion
+        self.tipo_productos = tipo_productos
+        self.area = area
+        self.num_empleados = num_empleados
+        PuestoDeMercado.num_puestos += 1
+
+    def mostrar_informacion(self):
+        print("Nombre del puesto:", self.nombre)
+        print("Ubicación:", self.ubicacion)
+        print("Tipo de productos:", self.tipo_productos)
+        print("Área:", self.area)
+        print("Número de empleados:", self.num_empleados)
+
+    def cambiar_ubicacion(self, nueva_ubicacion):
+        self.ubicacion = nueva_ubicacion
+        print("La ubicación del puesto se ha actualizado a:", self.ubicacion)
+
+    def agregar_producto(self, producto):
+        self.tipo_productos.append(producto)
+        print("Se ha agregado el producto", producto)
+
+    def calcular_area_por_empleado(self):
+        area_por_empleado = self.area / self.num_empleados
+        print("El área por empleado es:", area_por_empleado)
+
+    @classmethod
+    def obtener_num_puestos(cls):
+        return cls.num_puestos
+
+# Ejemplo de uso
+puesto1 = PuestoDeMercado("Puesto 1", "Centro", ["Frutas", "Verduras"], 50, 2)
+puesto1.mostrar_informacion()
+puesto1.cambiar_ubicacion("Zona Norte")
+puesto1.agregar_producto("Lácteos")
+puesto1.calcular_area_por_empleado()
+
+print("Número total de puestos de mercado:", PuestoDeMercado.obtener_num_puestos())
+    
+        
+ 
+
+      
+
         
 
 
