@@ -1,22 +1,22 @@
 # lambda un funcion que se autoejecuta
-hola=lambda a,b:print(a+b)
-# funcion normal
-def suma(a,b):
-    print(a+b)
+# hola=lambda a,b:print(a+b)
+# # funcion normal
+# def suma(a,b):
+#     print(a+b)
 
-suma(4,6) 
-hola(10,20)   
+# suma(4,6) 
+# hola(10,20)   
 
-# in ternario
-ternario="soy verdad ternario" if True else "soy falso"
-print(ternario)
+# # in ternario
+# ternario="soy verdad ternario" if True else "soy falso"
+# print(ternario)
 
-# if normal
+# # if normal
 
-if True:
-    print("soy verdad")
-else:
-    print("soy mentira")    
+# if True:
+#     print("soy verdad")
+# else:
+#     print("soy mentira")    
 
  # filter
  #
