@@ -20,12 +20,17 @@ class tienda_comercial:
         return respuesta
         
 # tarea 
-    def actualizar_tienda(self):
-        pass
+    def actualizar_tienda(self,tarea_17_tienda):
+        actualizar=list(filter(lambda a:{"ruc":a["ruc"],"nombre":a["nombre"]},tarea_17_tienda))
+        return "se actualizo"
 
 
-    def mostrar_todo(self):
+    def nuevo_producto(self):
         pass
+
+    def actualizar_hoario_atencion(self):
+        pass
+
 
 # otro metodo para crear un nuevo producto
 # otro metodo para actualizar el horario de atencion
@@ -35,4 +40,5 @@ respuesta1=tienda_comercial()
 # print(respuesta1.tienda_gerente(tienda,"china")) 
 # print(respuesta1.tienda_mas_categoria(tienda))
 # print(respuesta1.ruc_nombre(tienda))  
-print(respuesta1.eliminar_tienda(tienda,1423)) 
+print(respuesta1.eliminar_tienda(tienda,1111)) 
+# print(respuesta1.actualizar_tienda(tienda))

@@ -74,7 +74,7 @@ tienda=[
 ],
 tienda=[
     {
-        "ruc":325756214,
+        "ruc":999924,
         "nombre":"lucia",
         "categoria":["farmacia","restaurante"],
         "horario": {
@@ -86,7 +86,7 @@ tienda=[
 ],
 tienda=[
     {
-        "ruc":263598625,
+        "ruc":33331,
         "nombre":"saly",
         "categoria":["abarrotes","farmacia"],
         "horario": {
@@ -98,7 +98,7 @@ tienda=[
 ],
 tienda=[
     {
-        "ruc":263598625,
+        "ruc":5555,
         "nombre":"saly",
         "categoria":["abarrotes"],
         "horario": {
@@ -110,7 +110,7 @@ tienda=[
 ],
 tienda=[
     {
-        "ruc":263598625,
+        "ruc":4444,
         "nombre":"saly",
         "categoria":["abarrotes"],
         "horario": {
@@ -122,7 +122,7 @@ tienda=[
 ],
 tienda=[
     {
-        "ruc":263598625,
+        "ruc":2222,
         "nombre":"saly",
         "categoria":["abarrotes"],
         "horario": {
@@ -134,7 +134,7 @@ tienda=[
 ],
 tienda=[
     {
-        "ruc":263598625,
+        "ruc":1111,
         "nombre":"saly",
         "categoria":["abarrotes"],
         "horario": {
