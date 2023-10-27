@@ -3,7 +3,7 @@
 # nombre,edad,fecha de nacimiento,dni,usuario,password
 # minimo 5 registros maximo 10 registros
 
-usuario=[{
+usuarios=[{
     "dni":74930911,
     "nombre":"feli",
     "f_nacimiento":"07/09/2000",
@@ -13,7 +13,7 @@ usuario=[{
 
 
 }],
-usuario=[{
+usuarios=[{
     "dni":74236598,
     "nombre":"yadira",
     "f_nacimiento":"15/08/2003",
@@ -23,7 +23,7 @@ usuario=[{
 
 
 }],
-usuario=[{
+usuarios=[{
     "dni":76980911,
     "nombre":"maria",
     "f_nacimiento":"19/12/2002",
@@ -33,7 +33,7 @@ usuario=[{
 
 
 }],
-usuario=[{
+usuarios=[{
     "dni":74903695,
     "nombre":"jhoselin",
     "f_nacimiento":"25/06/2005",
@@ -43,7 +43,7 @@ usuario=[{
 
 
 }],
-usuario=[{
+usuarios=[{
     "dni":78954326,
     "nombre":"yola",
     "f_nacimiento":"26/07/1999",
