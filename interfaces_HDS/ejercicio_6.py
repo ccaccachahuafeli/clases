@@ -1,5 +1,7 @@
 from tkinter import*
 ventana=Tk()
+ventana.title("opradores") 
+ventana.geometry("400x300") 
 
 
 widget_uno=Frame()
@@ -23,7 +25,7 @@ result.grid(row=5,column=0)
 
 
 datos=IntVar()
-def operar():
+def operador():
     n1=int(num1.get())
     n2=int(num2.get())
     if datos.get()==1:
@@ -53,7 +55,7 @@ radior.grid(row=4,column=1)
 radior=Radiobutton(ventana,text='division',value=3,variable=datos)
 radior.grid(row=5,column=1)
 
-boton_suma=Button(ventana,text='calcular',command=operar).grid(row=7,column=0)
+boton_suma=Button(ventana,text='calcular',command=operador).grid(row=7,column=0)
 
 def limpiar():
     num1.delete(0,END)
@@ -64,3 +66,8 @@ boton_limpiar=Button(ventana,text='Limpiar',command=limpiar).grid(row=7,column=1
 
 
 ventana.mainloop()
+
+           
+
+
+
