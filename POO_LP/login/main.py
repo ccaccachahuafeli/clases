@@ -1,52 +1,49 @@
 # importar mi base de datos
-from bd import *        #  la variable usuario de mi bd estara  disponible  en este archivo
-
 #  crear clase para usuario
 # esta clase tendra los siguientes metodos
 # actualizar edad del usuario
 # verificar si usuario  esta registrado  o existe en mis registros
 # validar usuario y password
+from bd import * # la variable usuario estara disponible en este archivo
 
-from bd import *
+class Usuario:
 
-class User:
-    def mostrar_usuario(self, ide):
-        resultado=list(filter(lambda par:par["DNI"]==ide,usuario))
-        return f"""Aqui tienes informacion de la usuario que buscaste:
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& 
-        {resultado}
-"""
+    def __init__(self,dni,nombre, fecha_nacimiento,edad,usuario,password):
+        self.dni=dni
+        self.nombre=nombre
+        self.fecha_nacimiento=fecha_nacimiento
+        self.edad=edad
+        self.usuario=usuario
+        self.password=password
     
-    def agregar_edad(self, clave, valor):
-        for usuario in usuario:
-            if usuario["DNI"] == clave:
-                usuario[clave] = valor
-                return "Se actualizó."
-        return "Usuario no encontrado."
+    
+    
+    def actualizar_edad(self, nueva_edad):
+        self.edad = nueva_edad
 
-# verificar si usuario esta registrado o existe en mis registros
-    def verificar_usuario(self, usuario_buscar):
-        for usuario in usuario:
-            if usuario["Usuario"] == usuario_buscar:
-                return "Usuario registrado."
-        return "Usuario no encontrado en los registros."
+    def ver_usuario(self):
+        print("DNI:", self.dni)
+        print("Nombre:", self.nombre)
+        print("Fecha de nacimiento:", self.fecha_nacimiento)
+        print("Edad:", self.edad)
+        print("Usuario:", self.usuario)
+        print("Contraseña:", self.password)
 
-# validar usuario y password
-    def validar_usuario_password(self, usuario_a_validar, password_a_validar):
-        for usuario in usuario:
-            if usuario["Usuario"] == usuario_a_validar and usuario["Password"] == password_a_validar:
-                return "Usuario y contraseña válidos."
-        return "Usuario o contraseña incorrectos."
+    def verificar_user(self):
+        return self.usuario in usuarios
 
-rpt=User()
-print(rpt.agregar_edad("edad", 17))
-print(rpt.mostrar_usuario(7645343))
+    def validar_usuario(self, usuario):
+        return self.usuario == usuario
 
-usuario_a_buscar = "rodriguesC"
-print(rpt.verificar_usuario(usuario_a_buscar))
-print(rpt.mostrar_usuario(74930911))
+    def validar_password(self, password):
+        return self.password == password
 
-usuario_a_validar = "rodriguesC"
-password_a_validar = "1325"
-print(rpt.validar_usuario_password(usuario_a_validar, password_a_validar))
-print(rpt.mostrar_usuario(7645986))
+
+rpt = Usuario(78954326, "yola", "26/07/1999", '',"estudiante","5555")
+rpt.actualizar_edad(24)   
+rpt.ver_usuario()
+print(rpt.verificar_user())
+print(rpt.validar_usuario("estudiante"))
+print(rpt.validar_password("5555"))
+
+    

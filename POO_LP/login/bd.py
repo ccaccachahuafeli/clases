@@ -36,7 +36,7 @@ usuarios=[{
 usuarios=[{
     "dni":74903695,
     "nombre":"jhoselin",
-    "f_nacimiento":"25/06/2005",
+    "f_nacimiento":"25/06/2006",
     "edad":"",
     "usuario":"estudiante",
     "password":"4444"
