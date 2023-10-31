@@ -29,8 +29,11 @@ class Usuario:
         print("Usuario:", self.usuario)
         print("Contraseña:", self.password)
 
-    def verificar_user(self):
-        return self.usuario in usuarios
+    def verificar_usuario(self,usuario):
+        for user in usuarios:
+            if user["usuario"] == usuario:
+                return ("El usuario está registrado.")
+        return ("El usuario no está registrado.")
 
     def validar_usuario(self, usuario):
         return self.usuario == usuario
@@ -40,9 +43,10 @@ class Usuario:
 
 
 rpt = Usuario(78954326, "yola", "26/07/1999", '',"estudiante","5555")
-rpt.actualizar_edad(24)   
-rpt.ver_usuario()
-print(rpt.verificar_user())
+
+print(rpt.actualizar_edad(24))  
+print(rpt.ver_usuario())
+print(rpt.verificar_usuario("estudiante"))
 print(rpt.validar_usuario("estudiante"))
 print(rpt.validar_password("5555"))
 
