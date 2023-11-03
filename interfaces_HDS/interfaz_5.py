@@ -10,7 +10,8 @@ def captura_dato():
 
 etiqueta=Label(ventana,text="ingrese su nombre") 
 etiqueta.pack()                        
-text_nombre=Entry(ventana)
+text_nombre=Entry(ventana,relief="solid",borderwidth=2)
+text_nombre=Entry(relx=0.1,rely=0.1,relwidth=0.8,relheight=0.8)
 text_nombre.config(bg="blue",fg="yellow")
 text_nombre.pack()
 
