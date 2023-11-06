@@ -14,7 +14,8 @@
 # etiqueta.pack()
 
 # ventana.mainloop()
-
+# variables globales y locales 
+# 
 
 import tkinter as tk
 
